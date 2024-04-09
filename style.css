@@ -296,16 +296,32 @@ main {
   justify-content: space-evenly;
   gap: 2rem;
   padding: 4rem 0;
+  position: relative;
+}
+
+.destinations .city .spiral {
+  position: absolute;
+  bottom: 171px;
+  right: 57px;
+  z-index: -1;
+}
+
+.destinations .city .city-img {
+  height: 350px;
+  overflow: hidden;
 }
 
 .destinations .city .info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 1rem;
 }
 
-.destinations .city .info span,
+.destinations .city .info .headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.destinations .city .info p,
 h4 {
   color: #5e6282;
 }
@@ -316,10 +332,11 @@ h4 {
   color: #5e6282;
   margin: 0.4rem 0;
 }
+
 /* Partners */
 
 #Partners {
-  padding: 8rem 0;
+  padding: 8rem 4rem;
 }
 
 .partners {
