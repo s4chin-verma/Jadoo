@@ -411,8 +411,27 @@ h4 {
   font-size: 1.1rem;
 }
 
-.testimonials .summary .overview .nex-box {
+.testimonials .summary .overview .new-box {
   margin-left: 85px;
+}
+
+.testimonials .slider {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .slider svg {
+  width: 25px;
+  height: 25px;
+  color: #5e6282;
+}
+
+.testimonials .slider svg:hover {
+  color: #f1a501;
+  cursor: pointer;
 }
 
 /* Booking */
@@ -729,6 +748,10 @@ footer {
   color: #5e6282;
   width: 2rem;
   height: 2rem;
+}
+
+.footer .discover .social-links a:hover svg {
+  color: #f1a501;
 }
 
 .footer .discover h3 {
